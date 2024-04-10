@@ -21,8 +21,9 @@ let palavras = [
 ];
 random = Math.floor(Math.random() * 200);
 
+palavraselect = palavras[random];
 function game(palavra) {
-    let input = palavras[random];
+    let input = palavraselect;
     let iguais = [];
 
     function checkiguais() {
@@ -56,7 +57,7 @@ function controlador() {
     while (!ganhou && jogadas > 0) {
         let palavra = prompt('Digite a palavra:');
         game(palavra);
-        if (palavra === "porta") {
+        if (palavra === ) {
             ganhou = true;
             console.log("Parabéns! Você acertou a palavra.");
             break;
